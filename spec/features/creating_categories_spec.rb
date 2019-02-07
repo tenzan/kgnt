@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.feature 'Users can create new categories' do
     before do
         FactoryBot.create(:category, name: 'Toys')
+        FactoryBot.create(:category, name: 'Cars')
 
         visit '/'
         click_link 'New Category'
@@ -13,7 +14,10 @@ RSpec.feature 'Users can create new categories' do
      
         click_button 'Create Category'
         
-        expect(page).to have_content 'Category successfully created' 
+        expect(page).to have_content 'Category successfully created'
+        expect(page).to have_content 'Toys'
+        expect(page).to have_content 'Cars'
+        expect(page).to have_content 'Computers' 
     end
 
     scenario 'when providing invalid attributes' do
