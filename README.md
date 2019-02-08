@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ffbbada8361c4b349840abf877f6f962)](https://app.codacy.com/app/tenzan/kgnt?utm_source=github.com&utm_medium=referral&utm_content=tenzan/kgnt&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://travis-ci.org/tenzan/kgnt.svg?branch=master)](https://travis-ci.org/tenzan/kgnt)
 
 # README
