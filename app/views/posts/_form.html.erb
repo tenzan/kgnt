@@ -1,0 +1,11 @@
+<%= simple_form_for([category, post]) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :location %>
+  <%= f.input :price %> 
+  <%= f.input :currency, as: :radio_buttons, collection: ['USD', 'Som'], wrapper: :vertical_collection_inline %>
+  <%= f.input :phone %>
+  <%= f.input :purpose, as: :radio_buttons, collection: ['Sell', 'Buy', 'Rent'], wrapper: :vertical_collection_inline %>
+
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>
