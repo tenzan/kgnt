@@ -1,10 +1,10 @@
 FactoryBot.define do
   factory :post do
-    title { "MyString" }
+    title { "MyTitle" }
     description { "MyText with some Detailed Information" }
-    location { "MyString" }
+    location { "MyLocation" }
     price { 1 }
-    currency { "MyString" }
+    currency { "MyCurrency" }
     phone { "MyString" }
     purpose { "MyString" }
     category { nil }
