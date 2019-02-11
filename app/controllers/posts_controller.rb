@@ -33,6 +33,13 @@ class PostsController < ApplicationController
         render "edit"
       end
     end
+
+    def destroy
+      @post.destroy
+      flash[:notice] = "Post has been deleted."
+    
+      redirect_to @category
+    end
     
     private
 
