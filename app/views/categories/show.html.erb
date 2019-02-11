@@ -27,4 +27,12 @@
         class: "new" %>
 		</li>
 	</ul>
+
+	<ul id="posts">
+		<% @category.posts.each do |post| %>
+		<li>
+			<%= link_to post.title, [@category, post] %>
+		</li>
+		<% end %>
+	</ul>
 </header>

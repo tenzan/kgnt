@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_category
+    before_action :set_post, only: [:show, :edit, :update, :destroy]
 
     def new
         @post = @category.posts.build
