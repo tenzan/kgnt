@@ -51,6 +51,10 @@
 					<a class="nav-link <%= " active" if current_page?("/users/sign_up") %>" href=
 						<%= new_user_path %> tabindex="-1">Sign up</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link <%= " active" if current_page?("/signin") %>" href=
+						<%= new_session_path %> tabindex="-1">Sign in</a>
+				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
