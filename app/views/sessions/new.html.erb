@@ -2,16 +2,9 @@
 	<h1>Sign in</h1>
 </header>
 
-<%= form_tag(session_path) do |f| %>
-<p>
-	<%= label_tag :email %>
-	<%= email_field_tag :email, nil %>
-</p>
-<p>
-	<%= label_tag :password %>
-	<%= password_field_tag :password, nil %>
-</p>
+<%= simple_form_for :session, session: { email: 'email@email.com', password: 'password' }, url: session_path do |f| %>
+<%= f.input :email %>
+<%= f.input :password %>
 
-
-<%= submit_tag "Sign in", class: 'btn-primary' %>
+<%= f.button :submit, 'Sign in', class: "btn-primary" %>
 <% end %>
